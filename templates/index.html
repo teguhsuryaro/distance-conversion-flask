@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konversi Jarak</title>
+    <style>
+        body { font-family: Arial; padding: 30px; }
+        input, select { padding: 5px; margin: 5px; }
+        button { padding: 5px 10px; }
+    </style>
+    <link rel="stylesheet" href="static/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Konversi Jarak</h2>
+
+        <form method="POST">
+            <input type="number" step="any" name="value" placeholder="Masukkan angka" required>
+
+            <select name="from_unit">
+                <option value="mm">mm</option>
+                <option value="cm">cm</option>
+                <option value="m">m</option>
+                <option value="km">km</option>
+            </select>
+
+            <div class="span">
+                <span>ke</span>
+            </div>
+            
+            <select name="to_unit">
+                <option value="mm">mm</option>
+                <option value="cm">cm</option>
+                <option value="m">m</option>
+                <option value="km">km</option>
+            </select>
+
+            <br><br>
+            <button type="submit">Konversi</button>
+        </form>
+
+        {% if result is not none %}
+            <div class="result"><h3>Hasil: {{ result }}</h3></div>
+        {% endif %}
+    </div>
+<footer class="footer">
+    © 2025 Surya Ganteng
+</footer>
+
+</body>
+</html>
