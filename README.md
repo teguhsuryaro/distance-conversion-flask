@@ -1,54 +1,19 @@
-Distance Conversion App
+# 📏 Distance Conversion App
 
-A simple web application built with Python and Flask to convert distances between different units like Kilometers, Meters, Miles, and more.
+[![Python Version](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org)
+[![Framework](https://img.shields.io/badge/framework-Flask-lightgrey.svg)](https://flask.palletsprojects.com/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-Features
+Aplikasi web sederhana yang dibangun menggunakan **Python** dan **Flask** untuk mengonversi satuan jarak antara berbagai unit seperti Kilometer, Meter, Mil, dan lainnya secara instan.
 
-Convert units easily through a web interface.
+---
 
-Supports multiple units: Kilometer (km), Meter (m), Mile, etc.
+## ✨ Fitur Utama
+* **User Interface Web**: Konversi satuan dengan mudah melalui antarmuka browser yang intuitif.
+* **Dukungan Multi-Unit**: Mendukung berbagai satuan jarak (KM, M, Mile, dll).
+* **Desain Minimalis**: Tampilan yang bersih dan ringan.
 
-Simple and clean UI.
-
-Prerequisites
-
-Before you begin, ensure you have the following installed:
-
-Python 3.x
-
-Pip (Python package manager)
-
-Installation
-
-Clone the repository:
-
-git clone [https://github.com/teguhsuryaro/distance-conversion-flask.git](https://github.com/teguhsuryaro/distance-conversion-flask.git)
-cd distance-conversion-flask
-
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-
-How to Run
-
-Start the Flask server:
-
-python app.py
-
-
-Open your browser:
-Go to http://127.0.0.1:5000 to use the application.
-
-Project Structure
-
-app.py: The main Flask application logic.
-
-templates/: Contains the HTML files for the web interface.
-
-static/: Contains CSS or images (if any).
-
-License
-
-This project is open-source and available under the MIT License.
+## 🛠️ Prasyarat
+Sebelum menjalankan proyek ini, pastikan kamu sudah menginstal:
+* **Python 3.x**
+* **Pip** (Python package manager)
