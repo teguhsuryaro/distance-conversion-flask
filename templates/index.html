@@ -17,10 +17,18 @@
             <input type="number" step="any" name="value" placeholder="Masukkan angka" required>
 
             <select name="from_unit">
-                <option value="mm">mm</option>
-                <option value="cm">cm</option>
-                <option value="m">m</option>
                 <option value="km">km</option>
+                <option value="hm">hm</option>
+                <option value="dam">dam</option>
+                <option value="m">m</option>
+                <option value="dm">dm</option>
+                <option value="cm">cm</option>
+                <option value="mm">mm</option>
+
+                <option value="inch">inch</option>
+                <option value="feet">feet</option>
+                <option value="yard">yard</option>
+                <option value="mile">mile</option>
             </select>
 
             <div class="span">
@@ -28,10 +36,18 @@
             </div>
             
             <select name="to_unit">
-                <option value="mm">mm</option>
-                <option value="cm">cm</option>
-                <option value="m">m</option>
                 <option value="km">km</option>
+                <option value="hm">hm</option>
+                <option value="dam">dam</option>
+                <option value="m">m</option>
+                <option value="dm">dm</option>
+                <option value="cm">cm</option>
+                <option value="mm">mm</option>
+
+                <option value="inch">inch</option>
+                <option value="feet">feet</option>
+                <option value="yard">yard</option>
+                <option value="mile">mile</option>
             </select>
 
             <br><br>
@@ -39,8 +55,12 @@
         </form>
 
         {% if result is not none %}
-            <div class="result"><h3>Hasil: {{ result }}</h3></div>
+        <div class="result">
+            <p>{{ value }} {{ from_unit }} → {{ to_unit }}</p>
+            <h3>Hasil = {{ result }} {{ to_unit }}</h3>
+        </div>
         {% endif %}
+
     </div>
 <footer class="footer">
     © 2025 Surya Ganteng AKA Teguh Surya Romadon - H1D025079
